@@ -40,18 +40,20 @@
 
 .until-cell {
   width: 3vw;
-  padding: 0 0;
+  padding: 0;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.line-cell, .icon-cell {
+.line-cell,
+.icon-cell {
   width: 1vw;
   padding-right: 5px;
   text-align: start;
 }
 
-.mvv-table tr.departure-row, .mvv-table .notification-cell {
+.mvv-table tr.departure-row,
+.mvv-table .notification-cell {
   border-bottom: 1px solid #474747;
 }
 
@@ -64,13 +66,18 @@
   box-sizing: border-box;
 }
 
-
 .scroll-container {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
   position: relative;
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0 0 0 / 0%) 0%,
+    rgb(0 0 0) 12.5%,
+    rgb(0 0 0) 87.5%,
+    rgba(0 0 0 / 0%) 100%
+  );
 }
 
 .scroll-text {
@@ -85,6 +92,7 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(-100%);
   }
